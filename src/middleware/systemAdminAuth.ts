@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import Admin from '../models/Admin';
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'YeBingoSec123';
 
 export const requireSystemAdmin = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
