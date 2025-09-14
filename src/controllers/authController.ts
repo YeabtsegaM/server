@@ -4,7 +4,7 @@ import Admin from '../models/Admin';
 import { ResponseService } from '../services/responseService';
 import { DatabaseService } from '../services/databaseService';
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'YeBingoSec123';
 
 // Type definitions
 interface AdminDocument {
