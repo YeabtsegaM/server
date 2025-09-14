@@ -1,0 +1,1 @@
+{"version":3,"file":"performance.d.ts","sourceRoot":"","sources":["../../src/middleware/performance.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,YAAY,EAAE,MAAM,SAAS,CAAC;AAG1D,eAAO,MAAM,kBAAkB,GAAI,KAAK,OAAO,EAAE,KAAK,QAAQ,EAAE,MAAM,YAAY,KAAG,IAwBpF,CAAC;AAGF,eAAO,MAAM,aAAa,QAAO,IAIhC,CAAC;AAGF,eAAO,MAAM,YAAY,GAAI,WAAW,MAAM,EAAE,UAAU,MAAM,KAAG,IAIlE,CAAC"}
