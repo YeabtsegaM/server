@@ -62,6 +62,9 @@ dotenv.config();
 const app = express();
 const server = createServer(app);
 
+// Trust proxy for rate limiting
+app.set('trust proxy', 1);
+
 // Configure Socket.IO with CORS
 const io = new Server(server, {
   cors: {
