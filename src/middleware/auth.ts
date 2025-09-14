@@ -23,7 +23,7 @@ export const authenticateToken = (req: AuthenticatedRequest, res: Response, next
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication') as any;
+    const decoded = jwt.verify(token, process.env.JWT_SECRET) as any;
     req.user = {
       id: decoded.id,
       username: decoded.username,
