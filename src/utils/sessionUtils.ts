@@ -12,7 +12,7 @@ export const generateSessionId = (): string => {
  * Generate display URL with session ID
  */
 export const generateDisplayUrl = (sessionId: string, baseUrl?: string): string => {
-  const defaultBaseUrl = 'https://display-yebingo-com.netlify.app?Bingo=';
+  const defaultBaseUrl = process.env.DISPLAY_BASE_URL || 'https://displayyebingocom.vercel.app?Bingo=';
   return `${baseUrl || defaultBaseUrl}${sessionId}`;
 };
 
