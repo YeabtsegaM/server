@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'YeBingoSec123';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://yeabtsegamesfin01_db_user:SSUyY1GwKlv2Zntg@cluster0.mhwo6zb.mongodb.net/YeBingo';
 
 export const connectDatabase = async (): Promise<void> => {
   try {
