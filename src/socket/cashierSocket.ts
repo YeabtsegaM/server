@@ -130,7 +130,7 @@ export class CashierSocketHandler {
 
     try {
       const jwt = (await import('jsonwebtoken')).default;
-      const JWT_SECRET = process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication';
+      const JWT_SECRET = process.env.JWT_SECRET || 'YeBingoSec123';
       
       const decoded = jwt.verify(token, JWT_SECRET) as any;
       
