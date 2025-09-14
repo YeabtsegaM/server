@@ -30,7 +30,7 @@ export async function fixSessionSync() {
     
     // Update cashier with the correct session ID
     cashier.sessionId = displaySessionId;
-    cashier.displayUrl = `display-yebingo-com.netlify.app/?Bingo=${displaySessionId}`;
+    cashier.displayUrl = `${process.env.DISPLAY_BASE_URL || 'https://displayyebingocom.vercel.app?Bingo='}${displaySessionId}`;
     cashier.isConnected = true;
     cashier.lastActivity = new Date();
     
