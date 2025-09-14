@@ -23,7 +23,7 @@ export const authenticateToken = (req: AuthenticatedRequest, res: Response, next
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET) as any;
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'YeBingoSec123') as any;
     req.user = {
       id: decoded.id,
       username: decoded.username,
