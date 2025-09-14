@@ -4,7 +4,7 @@ import Cashier from '../models/Cashier';
 import Shop from '../models/Shop';
 import { ResponseService } from '../services/responseService';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 interface CashierDocument {
   _id: string;
