@@ -30,7 +30,7 @@ export async function fixSessionSync() {
     
     // Update cashier with the correct session ID
     cashier.sessionId = displaySessionId;
-    cashier.displayUrl = `http://localhost:3001?Bingo=${displaySessionId}`;
+    cashier.displayUrl = `https://api-yebingo-com.onrender.com/?Bingo=${displaySessionId}`;
     cashier.isConnected = true;
     cashier.lastActivity = new Date();
     
