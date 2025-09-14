@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import Cashier from '../models/Cashier';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 interface CashierRequest extends Request {
   cashier?: {
