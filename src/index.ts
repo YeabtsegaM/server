@@ -68,7 +68,7 @@ app.set('trust proxy', 1);
 // Configure Socket.IO with CORS
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:3003", "http://localhost:3004", "http://localhost:3005", "https://admin-yebingo-com.netlify.app", "https://shop-admin-yebingo-com.netlify.app", "https://cashier-yebingo-com.netlify.app", "https://display-yebingo-com.netlify.app"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:3003", "http://localhost:3004", "http://localhost:3005", "https://admin-yebingo-com.netlify.app", "https://shop-admin-yebingo-com.netlify.app", "https://cashier-yebingo-com.netlify.app", "https://displayyebingocom.vercel.app"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true
   },
@@ -84,7 +84,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // CORS configuration
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:3003", "http://localhost:3004", "http://localhost:3005", "https://admin-yebingo-com.netlify.app", "https://shop-admin-yebingo-com.netlify.app", "https://cashier-yebingo-com.netlify.app", "https://display-yebingo-com.netlify.app"],
+  origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:3003", "http://localhost:3004", "http://localhost:3005", "https://admin-yebingo-com.netlify.app", "https://shop-admin-yebingo-com.netlify.app", "https://cashier-yebingo-com.netlify.app", "https://displayyebingocom.vercel.app"],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
