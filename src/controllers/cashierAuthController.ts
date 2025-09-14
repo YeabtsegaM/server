@@ -4,7 +4,7 @@ import Cashier from '../models/Cashier';
 import Shop from '../models/Shop';
 import { ResponseService } from '../services/responseService';
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'YeBingoSec123';
 
 interface CashierDocument {
   _id: string;
