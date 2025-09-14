@@ -4,7 +4,7 @@ import Admin from '../models/Admin';
 import { ResponseService } from '../services/responseService';
 import { DatabaseService } from '../services/databaseService';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // Type definitions
 interface AdminDocument {
