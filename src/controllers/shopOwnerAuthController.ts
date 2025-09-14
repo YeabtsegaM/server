@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import ShopOwner from '../models/ShopOwner';
 import { ResponseService } from '../services/responseService';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'bingo2025-super-secret-jwt-key-for-admin-authentication';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // Type definitions
 interface ShopOwnerDocument {
