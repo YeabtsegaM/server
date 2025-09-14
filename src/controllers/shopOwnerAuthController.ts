@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import ShopOwner from '../models/ShopOwner';
 import { ResponseService } from '../services/responseService';
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'YeBingoSec123';
 
 // Type definitions
 interface ShopOwnerDocument {
