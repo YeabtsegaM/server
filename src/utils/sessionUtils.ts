@@ -12,7 +12,7 @@ export const generateSessionId = (): string => {
  * Generate display URL with session ID
  */
 export const generateDisplayUrl = (sessionId: string, baseUrl?: string): string => {
-  const defaultBaseUrl = 'http://localhost:3001?Bingo=';
+  const defaultBaseUrl = 'https://display-yebingo-com.netlify.app?Bingo=';
   return `${baseUrl || defaultBaseUrl}${sessionId}`;
 };
 
@@ -52,7 +52,7 @@ export const initializeGlobalConfig = async (): Promise<void> => {
       await GlobalConfig.create({
         id: 'global-config',
         batTemplate: 'start "" chrome.exe --new-window --window-position="1920,0" --autoplay-policy=no-user-gesture-required --user-data-dir="C:/tmp/Profiles/4" -kiosk -fullscreen',
-        displayBaseUrl: 'display-yebingo-com.netlify.app/?Bingo='
+        displayBaseUrl: 'https://display-yebingo-com.netlify.app?Bingo='
       });
       console.log('✅ Global configuration initialized');
     }
