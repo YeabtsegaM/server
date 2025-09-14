@@ -52,7 +52,7 @@ export const initializeGlobalConfig = async (): Promise<void> => {
       await GlobalConfig.create({
         id: 'global-config',
         batTemplate: 'start "" chrome.exe --new-window --window-position="1920,0" --autoplay-policy=no-user-gesture-required --user-data-dir="C:/tmp/Profiles/4" -kiosk -fullscreen',
-        displayBaseUrl: 'https://api-yebingo-com.onrender.com/?Bingo='
+        displayBaseUrl: 'display-yebingo-com.netlify.app/?Bingo='
       });
       console.log('✅ Global configuration initialized');
     }
